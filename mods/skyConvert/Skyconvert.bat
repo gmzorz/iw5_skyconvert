@@ -2,9 +2,7 @@
 setlocal EnableDelayedExpansion
 pushd %~dp0
 title Skycustomizer for mw3
-if [%1]==[] goto res
-set iwd=%1
-if exist *.tmp ( del /s /q *.tmp 2>nul )
+if exist *.tmp ( del /s /q *.tmp >nul )
 if exist iw_04 ( rmdir iw_04 /s /q 2>nul )
 if exist iw_03 ( rmdir iw_03 /s /q 2>nul )
 if exist iw_25 ( rmdir iw_25 /s /q 2>nul )
@@ -12,6 +10,8 @@ if exist iw_27 ( rmdir iw_27 /s /q 2>nul )
 if exist iw_31 ( rmdir iw_31 /s /q 2>nul )
 if exist iw_33 ( rmdir iw_33 /s /q 2>nul )
 if exist images ( rmdir images /s /q 2>nul )
+if [%1]==[] goto res
+set iwd=%1
 echo                           +--------------------------+
 echo                           ^|   MADE BY JIMMY/GMZORZ   ^|
 echo                           +--------------------------+
@@ -117,6 +117,7 @@ echo No file selected, press any key to revert to original skyboxes
 echo. 
 pause >nul
 7za x _ft.bak >nul
+7za x _ftdlc.bak >nul
 goto zip
 :zip
 ren iw_03 images
