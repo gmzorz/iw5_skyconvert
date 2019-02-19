@@ -2,7 +2,11 @@ Note, this file should be in:
   Steam\steamapps\common\Call of Duty Modern Warfare 3\mods\skyConvert
   (pr any subdirectory under the 'mods' directory)
 
+-- Converting skies --
 Run Skyconvert.bat
   Method 1: Drag and Drop .iwd file on .bat file
   Method 2: Command line usage: Skyconvert inputfile.iwd
   
+-- Restoring default skyboxes --
+Run Skyconvert.bat (no drag & drop or command line parameters required)
+  Press any key to revert to original skyboxes
