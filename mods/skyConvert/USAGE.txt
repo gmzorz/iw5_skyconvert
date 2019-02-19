@@ -10,3 +10,5 @@ Run Skyconvert.bat
 -- Restoring default skyboxes --
 Run Skyconvert.bat (no drag & drop or command line parameters required)
   Press any key to revert to original skyboxes
+
+NOTE: while converting, it will ask if you would like to exit out of the window, do NOT exit, press ENTER instead
